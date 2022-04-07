@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Eamonn Delaney
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Info/>
+      <Info/>
     </div>
   );
+}
+
+function Info() {
+  return (
+    <div>
+      <h1>Inventory Management System</h1>
+      <p>Manage Your stuff!</p>
+      <AddItem/>
+    </div>
+  );
+}
+
+function AddItem () {
+  return (
+    <form>
+      <label for="text-form">Type something </label>
+      <input type="text" id="text-form"/>
+    </form>
+  )
 }
 
 export default App;
